@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a id="first" href="index.html">Ján Michalek</a></li>
+                <li><a href="zaujmy.html">Zaujmy</a></li>
+                <li><a href="skola.html">Skola</a></li>
+                <li><a href="omne.html">About Me</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+
+        <div id="tsparticles"></div>
+        
+        
+        <div class="con">
+            <h1>O mne</h1>
+            <img src="obrazky/ja.jpg" alt="ja" width="300">
+            <br>
+            <h3>Vzdelanie</h3>
+            <p>
+            Chodil som na ZŠ KPS v Kráľovej pri Senci, <br>
+            a teraz študujem na SPŠE Hálova 16 v BA. 
+            </p><br>
+            <h3>Kontakt</h3>
+            <p>
+                Ak by si ma chcel kontakovať použi údaje nižšie alebo vyplň formulár. <br>
+                tel. č.: +421 123 321<br>
+                email: ****@gmail.com
+            </p><br>
+            <form action="post">
+                <fieldset>
+                    <legend>Údaje</legend>
+                    
+                    <label for="meno">Vaše meno: </label>
+                    <input type="text" name="meno" required>
+                    <br>
+                    <label for="mail">Váš Email: </label>
+                    <input type="email" name="mail" placeholder="example@gmail.com" required>
+                    <br>
+                    <label for="tel">Váše číslo: </label>
+                    <input type="tel" name="tel" placeholder="#### ### ###" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Dôvod</legend>  
+                    <input type="radio" name="dovod_big" value="c++" required><label for="dovod_big">C++ developer</label><br>
+                    <input type="radio" name="dovod_big" value="web_developer" required><label for="dovod_big">Web developer</label><br>
+                    <input type="radio" name="dovod_big" value="gitarista" required><label for="dovod_big">Gitarista</label>
+                    <br><br>
+                    <label for="dovod">Špecifikujte Váš dôvod:</label><br>
+                    <textarea style="resize: none;" rows="5" cols="50" title="Špecifikujte Váš dôvod" name="dovod" placeholder="Váš dôvod..." required></textarea>
+                    <br>
+                    <br>
+                </fieldset>
+                <input type="checkbox" name="suhlas" value="suhlas" required>
+                <label>Súhlasím zo spracovaním osobných údajov <a href="https://gdpr-info.eu/" target="_blank">GDPR</a>.</label>
+                <br>
+                <button id="button_send"><span id="button_text">Odoslať</span></button>
+            </form>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </main>
+    <footer>
+        <p> Made by Ján Michalek</p>
+    </footer>
+    
+    <!--
+    Toto je open source kod ktoreho implementaciu som videl na jednej stranke a pacilo sa mi to. 
+    Je to odtialto https://particles.js.org/
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    nechavam ho zakomentovany lebo je to technicky kod niekoho ineho takze porusuje pravidlo zo zadania,
+    ale planujem mat toto ako pozadie pre moje naozajstne portfolio takze aby som nezabudol.
+    V script.js je konfiguracia.
+    -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+
+</body>
+</html>
