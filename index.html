@@ -3,55 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Me</title>
+    <meta name="description" content="Portfolio of Jan Michalek, a 16-year-old developer and ML engineer from Bratislava.">
+    <title>Jan Michalek | Developer and ML Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a id="first" href="index.html">Ján Michalek</a></li>
-                <li><a href="zaujmy.html">Zaujmy</a></li>
-                <li><a href="skola.html">Skola</a></li>
-                <li><a href="omne.html">About Me</a></li>
-            </ul>
-            
-        </nav>
-    </header>
-    <main>
-         
-        <div id="tsparticles"></div>
-        
-        
-        <div class="con">
-            <h1>Vitaj na mojej portfólio stránke!</h1>
-            <p>
-            Som Ján Michalek a som študent na SPŠE Hálova 16 v Bratislave. <br>
-            Vytvoril som túto stránku ako súčasť školského projektu <br>
-            aby som mohol zdieľať informácie o sebe, mojich záujmoch a školskom živote. <br>
-            Ak by si ma chcel kontakovať choď do About Me v navigačnom bare. <br>
-            </p>
-            <img src="obrazky/ja.jpg" alt="ja" width="300">
-            <br><br>
-            <label>Reklama na nyarch linux</label> <br> <br> <br>
-            <a href="https://nyarchlinux.moe/" target="_blank"><img src="obrazky/arch_cute_logo.png" alt="Reklama na nyarch linux"></a>
-        </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </main>
-    <footer>
-        <p> Made by Ján Michalek</p>
-    </footer>
+    <div id="tsparticles" aria-hidden="true"></div>
 
-    <!--
-    Toto je open source kod ktoreho implementaciu som videl na jednej stranke a pacilo sa mi to. 
-    Je to odtialto https://particles.js.org/
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
-    nechavam ho zakomentovany lebo je to technicky kod niekoho ineho takze porusuje pravidlo zo zadania,
-    ale planujem mat toto ako pozadie pre moje naozajstne portfolio takze aby som nezabudol.
-    V script.js je konfiguracia.
-    -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <header class="site-header">
+        <div class="nav-wrap">
+            <a class="brand" href="#home">Jan Michalek</a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="#home">Home</a>
+                <a href="#highlights">Highlights</a>
+                <a href="#research">Research</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#stack">Stack</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="section hero reveal">
+            <div class="hero-copy">
+                <p class="eyebrow">Developer and ML engineer from Bratislava</p>
+                <h1>Building real systems from first principles.</h1>
+                <p class="lead">
+                    I am a 16-year-old developer and ML engineer from Slovakia, currently in my second year at SPSE Halova.
+                    I also attend university-level lectures at FEI STU through the Habsburg program.
+                </p>
+                <p class="sublead">
+                    I focus on machine learning workflows, retrieval systems, and practical engineering over demo-only projects.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projects">View projects</a>
+                    <a class="btn btn-ghost" href="#contact">Get in touch</a>
+                </div>
+                <ul class="quick-facts">
+                    <li>2nd-year student at SPSE Halova, Bratislava</li>
+                    <li>FEI STU lectures via the Habsburg program</li>
+                    <li>Primary language: Python, with C++ and SQL in active use</li>
+                </ul>
+            </div>
+            <div class="hero-visual">
+                <img src="obrazky/ja.jpg" alt="Portrait of Jan Michalek">
+            </div>
+        </section>
+
+        <section id="highlights" class="section reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Credibility strip</p>
+                <h2>Specific metrics with traceable sources.</h2>
+            </div>
+            <div class="metric-grid">
+                <article class="metric-card">
+                    <p class="metric-value">3rd place</p>
+                    <p class="metric-label">Open Data Heroes Hackathon with Demagog.sk AI Fact-Checker.</p>
+                    <p class="proof-line">Source: official hackathon result page.</p>
+                    <a href="https://www.omediach.com/internet/29855-open-data-heroes-hackathon-spojil-it-odbornikov-novinarov-a-neziskovy-sektor-pre-silnejsiu-demokraciu" class="proof-link">View hackathon coverage</a>
+                </article>
+                <article class="metric-card">
+                    <p class="metric-value">~22,000</p>
+                    <p class="metric-label">Political statements embedded and indexed in Qdrant.</p>
+                    <p class="proof-line">Source: Qdrant collection count snapshot.</p>
+                    <span class="pending-proof">Qdrant photo pending</span>
+                </article>
+                <article class="metric-card">
+                    <p class="metric-value">24h</p>
+                    <p class="metric-label">Prototype delivery window for the Pomelo Team hackathon build.</p>
+                    <p class="proof-line">Source: hackathon format and project timeline.</p>
+                    <a href="mojastranka1.xo.je" class="proof-link">View the website</a>
+                    
+                </article>
+                <article class="metric-card">
+                    <p class="metric-value">Two-stage</p>
+                    <p class="metric-label">LightGBM classifier and regressor architecture for rail delay research.</p>
+                    <p class="proof-line">Source: project method documentation.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="research" class="section reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Research spotlight</p>
+                <h2>ZSR Train Delay Prediction</h2>
+            </div>
+            <article class="project-card research-card">
+                <div class="card-top">
+                    <span class="badge research">Ongoing research paper</span>
+                    <span class="badge dev">Active development</span>
+                </div>
+                <p>
+                    This is an ongoing ML research project, not a finished product launch. The goal is to model train delays with
+                    robust features and publish findings as a paper.
+                </p>
+                <ul class="project-points">
+                    <li>Two-stage LightGBM setup: classifier for delay likelihood, regressor for delay magnitude.</li>
+                    <li>Graph-based features built with NetworkX to represent network context.</li>
+                    <li>Continuous MongoDB scraping pipeline for fresh operational data.</li>
+                </ul>
+                <p class="proof-line">Current milestone: stabilize evaluation and prepare paper-ready experimental notes.</p>
+            </article>
+        </section>
+
+        <section id="projects" class="section reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Built work</p>
+                <h2>Shipped outputs and hackathon execution.</h2>
+            </div>
+            <div class="card-grid">
+                <article class="project-card">
+                    <div class="card-top">
+                        <span class="badge awarded">Awarded</span>
+                        <span class="badge prototype">Hackathon build</span>
+                    </div>
+                    <h3>Demagog.sk AI Fact-Checker</h3>
+                    <p>
+                        3rd place project at Open Data Heroes Hackathon. Built semantic fact-checking flow using BGE-M3 embeddings,
+                        Qdrant vector search, RAG, and tool-calling for live web evidence.
+                    </p>
+                    <ul class="project-points">
+                        <li>Indexed approximately 22k political statements for retrieval.</li>
+                        <li>Combined semantic search with generated verification flow.</li>
+                        <li>Designed for practical query speed and explainable output.</li>
+                    </ul>
+                    <div class="link-row">
+                        <a href="#" aria-label="Open hackathon result proof">Result proof placeholder</a>
+                        <a href="#" aria-label="Open Qdrant proof image">Qdrant evidence placeholder</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-top">
+                        <span class="badge prototype">24h prototype</span>
+                    </div>
+                    <h3>Pomelo Team Request System</h3>
+                    <p>
+                        Built in a 24-hour hackathon: a PHP, MySQL, and JavaScript request management system for an investor
+                        community with Gemini-powered request categorization.
+                    </p>
+                    <ul class="project-points">
+                        <li>Structured request intake and tracking flow in one sprint.</li>
+                        <li>Added automated category suggestions to speed triage.</li>
+                        <li>Shipped a usable interface under hard time pressure.</li>
+                    </ul>
+                    <div class="link-row">
+                        <a href="https://halovamake.spsehalova.sk/" aria-label="Open Pomelo Team hackathon">Hackathon event</a>
+                    </div>
+                </article>
+            </div>
+
+            <h3 class="subheading">In Development and Concept Work</h3>
+            <div class="card-grid">
+                <article class="project-card">
+                    <div class="card-top">
+                        <span class="badge dev">In development</span>
+                    </div>
+                    <h3>Slovak Political Fact-Checking Platform</h3>
+                    <p>
+                        Modular FastAPI monolith moving toward production readiness. Current focus is architecture hardening,
+                        reliability, and clean handoff between retrieval and verification services.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-top">
+                        <span class="badge concept">Concept</span>
+                    </div>
+                    <h3></h3>
+                    <p>
+                        SaaS concept for Slovak municipalities: notices, document workflows, and resident communication in one
+                        system. Presented as a startup direction, not yet a launched product.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="stack" class="section reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Technical stack</p>
+                <h2>Tools I actively use.</h2>
+            </div>
+            <div class="stack-grid">
+                <article class="stack-block">
+                    <h3>Languages</h3>
+                    <ul class="stack-list">
+                        <li>Python (primary)</li>
+                        <li>C++</li>
+                        <li>SQL</li>
+                    </ul>
+                </article>
+                <article class="stack-block">
+                    <h3>ML / AI</h3>
+                    <ul class="stack-list">
+                        <li>LightGBM</li>
+                        <li>scikit-learn</li>
+                        <li>BGE-M3 embeddings</li>
+                        <li>Qdrant vector search</li>
+                        <li>RAG pipelines</li>
+                        <li>LLM tool-calling</li>
+                    </ul>
+                </article>
+                <article class="stack-block">
+                    <h3>Web</h3>
+                    <ul class="stack-list">
+                        <li>FastAPI</li>
+                        <li>Vue.js</li>
+                        <li>TailwindCSS</li>
+                        <li>SQLModel</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </article>
+                <article class="stack-block">
+                    <h3>Infra</h3>
+                    <ul class="stack-list">
+                        <li>Netlify</li>
+                        <li>Cloudflare</li>
+                        <li>Arch Linux / Hyprland</li>
+                        <li>Git</li>
+                        <li>QEMU / KVM</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="education" class="section reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Education and trajectory</p>
+                <h2>Growing from secondary school to research-level work.</h2>
+            </div>
+            <div class="timeline-grid">
+                <article class="project-card">
+                    <div class="card-top">
+                        <span class="badge dev">Current</span>
+                    </div>
+                    <h3>SPSE Halova, Bratislava</h3>
+                    <p>
+                        Second-year student building a strong software and engineering base while shipping projects outside the
+                        classroom.
+                    </p>
+                </article>
+                <article class="project-card">
+                    <div class="card-top">
+                        <span class="badge research">University track</span>
+                    </div>
+                    <h3>FEI STU lectures via Habsburg program</h3>
+                    <p>
+                        Attend selected university-level lectures in parallel, with a focus on deeper technical foundations and
+                        long-term research readiness.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section reveal" id="interests">
+            <div class="section-heading">
+                <p class="eyebrow">Beyond code</p>
+                <h2>Depth signals and personal interests.</h2>
+            </div>
+            <p>
+                I spend time on competitive programming, CTF and cybersecurity challenges, and deep ML internals. I wrote
+                LightGBM pseudocode from scratch to understand the algorithm line by line. Outside engineering, I listen to power
+                metal and care about sustainable systems design.
+            </p>
+            <div class="chip-row">
+                <span class="chip">Competitive programming</span>
+                <span class="chip">CTF / cybersecurity</span>
+                <span class="chip">ML internals</span>
+                <span class="chip">Power metal</span>
+                <span class="chip">Sustainable systems</span>
+            </div>
+        </section>
+
+        <section id="contact" class="section reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Contact</p>
+                <h2>Open to serious projects and collaboration.</h2>
+            </div>
+            <div class="contact-grid">
+                <article class="contact-item">
+                    <h3>Email</h3>
+                    <p>update-me@example.com</p>
+                </article>
+                <article class="contact-item">
+                    <h3>GitHub</h3>
+                    <p>github.com/your-handle</p>
+                </article>
+                <article class="contact-item">
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/your-handle</p>
+                </article>
+            </div>
+            <p class="proof-line">Placeholders are marked where you said you will add final proof links and media.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Made by Jan Michalek</p>
+    </footer>
 </body>
 </html>
