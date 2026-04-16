@@ -417,14 +417,30 @@ p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.contact-item h3 {
-    margin-top: 0;
+.contact-item {
+    margin: 0;
+    display: flex;
+    align-items: center;     /* Centers vertically */
+    
 }
 
 .contact-item p {
     color: #c8d0d8;
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.88rem;
+}
+
+.contact-item a {
+    color: #c8d0d8;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(139, 211, 230, 0.45);
+    transition: color 180ms ease, border-color 180ms ease;
+}
+
+.contact-item a:hover,
+.contact-item a:focus-visible {
+    color: var(--accent);
+    border-bottom-color: rgba(139, 211, 230, 0.85);
 }
 
 .site-footer {
